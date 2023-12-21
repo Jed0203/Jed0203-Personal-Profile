@@ -1,0 +1,142 @@
+<!DOCTYPE html> <!-- Required document type definition -->
+<html lang="en">  <!-- HTML tag with language attribute (in this case, set to English) -->
+<head>
+    <!-- The head tag contains metadata and links to external resources -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jed's Personal Profile</title>
+    <!-- <meta property="og:url" content="https://jed0203.github.io/wdd230">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css"> -->
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="icon" href="images/jc.ico">
+    <script src="https://kit.fontawesome.com/77ba47d849.js" crossorigin="anonymous"></script>
+    <script defer src="scripts/scripts.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <!-- <img class = "background-img" src="images/profile.webp" alt="Jed profile picture"> -->
+        <div class="container">
+            <nav>
+                <img src="images/Screenshot 2023-12-17 015013.png" class ="logo" alt="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+        <div class="header-text">
+            <p>Software Engineer</p>
+            <h1>Hi, I'm Jed Chang From Taiwan</h1>
+        </div>
+    </header>
+<!-- about -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.webp" alt="user-img">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>T  laatrnume llag nolu ed,ea u ini t   oenF .maorrctoon eo    uruníeaci.aarn duotdeaqennen r  ranepoollc rotoncl quUeee lqaoricocouílog  rcrerscimcsasdotce  qoldalamc oenac cvere vheo t ne.gF,en beieanldoo yQQt,,en iprt osaaoal. l oívnidouvuslsonle eunesoerueoum lasns dmeauzdanr on glec naiunbalo osuirinrícdzn íoa elmucun h  pomo  o i alstractrp eu r en nu u   g do mdtoeu c  nnreeaoederods o,c u í u  i htlqncib tbdnpnroanesmoqraleshlellírm  sre angEaa  zs,c  dpro leau   eluadansle    cnroegr rdó </p>
+                <div class="tab-title">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experince')">Experince</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web Development</span><br>Web app Development</li>
+                        <li><span>Data Science</span><br>Data Analysis/Machine Learning</li>
+                        <li><span>QA</span><br>Software Testing</li>
+                        <li><span>IT</span><br>IT Technician</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experince">
+                    <ul>
+                        <li><span>2021 - Current</span><br>IT Technician at BYU-Idaho</li>
+                        <li><span>2022 Aug - 2022 Dec</span><br>Quality Aussrance Engineer Intership at The Church of Jesus Christ of Latter Day-Sanits</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2024</span><br>BS of Software Engineering at BYU-Idaho</li>
+                        <li><span>2023</span><br>Data Science Certificate at BYU-Idaho</li>
+                        <li><span>2022</span><br>SQL in Data Analyst Certificate at Linlkding Learning</li>
+                    </ul>
+                </div>
+            </div>    
+        </div>
+    </div>
+</div>
+<!-- services -->
+<div id="project">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="project-list">
+            <div class="work">
+                <img src="images/work-1.png" alt="work">
+                <div class="layer">
+                    <h3>Nantou City Commerce</h3>
+                    <p>T  laatrnume llag nolu ed,ea u ini t   oenF .maorrctoon eo    uruníeaci.aarn duotdeaqennen r  ranepoollc.</p>
+                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png" alt="work">
+                <div class="layer">
+                    <h3>College Baseball Manager Analysis</h3>
+                    <p>T  laatrnume llag nolu ed,ea u ini t   oenF .maorrctoon eo    uruníeaci.aarn duotdeaqennen r  ranepoollc.</p>
+                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png" alt="work">
+                <div class="layer">
+                    <h3>Machine Learning Proejcts</h3>
+                    <p>T  laatrnume llag nolu ed,ea u ini t   oenF .maorrctoon eo    uruníeaci.aarn duotdeaqennen r  ranepoollc.</p>
+                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- Contact -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> cha19057@byui.edu</p>
+                <p><i class="fa-solid fa-phone"></i> 208-227-3164</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=100003681960730"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/jedchang"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="images/jed_resume_cv.pdf" download class="btn btn2">Download Resume</a>
+        </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Youe Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>
