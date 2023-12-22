@@ -15,13 +15,25 @@ body{
 
 /* HEADER */
 
-.header {
+#hero img{
+    width: 100%; /* Make the image fill the container */
+    height: 50%; /* Maintain aspect ratio */
+}
+
+#header-text{
+    width: fit-content;
+    position: absolute;
+    font-size: 20px;
+    top: 400px;
+    left: 10px;
+}
+/* .header {
 	width:100%;
     height: 100svh;
     background-image: url('/images/jedp2-0.png');
     background-size: cover;
     background-position: center;
-}
+} */
 
 .container{
     padding: 10px 10%;
